@@ -1,0 +1,12 @@
+.card {
+    width: 350px;
+    height: 200px;
+    background-color: rgb(200,200,200);
+    -webkit-mask-image: url(/grit.png);
+    mask-image: url(/grit.png);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    cursor: grab
+}

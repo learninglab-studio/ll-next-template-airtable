@@ -1,0 +1,28 @@
+
+/* Markdown.module.css */
+
+.markdown h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: red;
+  }
+  
+  .markdown h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .markdown p {
+    margin-bottom: 1rem;
+  }
+  
+  .markdown ul {
+    margin-bottom: 1rem;
+  }
+  
+  .markdown li {
+    margin-left: 1.5rem;
+  }
+  

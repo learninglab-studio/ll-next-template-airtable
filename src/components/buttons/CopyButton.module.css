@@ -1,0 +1,18 @@
+.button {
+    background-color: rgba(235,235,235,1.0);
+    border-radius: 5px; 
+    border: none;
+    /* color: white; */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 3px 5px 5px rgba(46, 75, 75, 0.5);
+  }
+
+
+.button:active {
+  box-shadow: 1px 2px 3px rgba(46, 75, 75, 0.8);
+}

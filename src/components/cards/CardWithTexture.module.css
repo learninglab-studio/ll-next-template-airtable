@@ -1,0 +1,11 @@
+.cardWithTexture {
+    width: 350px;
+    height: 200px;
+    background-color: rgb(255,0,170);
+    /* -webkit-mask-image: url(/grit.png);
+    mask-image: url(/grit.png);
+    -webkit-mask-size: 70%;
+    mask-size: 70%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; */
+}
