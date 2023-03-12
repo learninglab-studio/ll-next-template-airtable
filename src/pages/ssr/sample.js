@@ -28,9 +28,8 @@ function Page({ data }) {
                       borderRadius: '7px',
                     //   display: 'block',
                       margin: '10px auto'
-                    }}
-                  >
-                    {e.fields.TaskTitle}
+                    }}>
+                    {e.fields.Title}
                   </div>
                   
                     </Link>
