@@ -7,25 +7,25 @@ import Link from "next/link"
 // change these
 const yourTable = "Tasks"
 const yourView = "THE_MENU"
+const slugField = "TaskID"
 
 // this is your page code
 function Page({ data }) {
     // Render data...
     return (
-        <div style={{width: "70%", margin: "auto", marginBottom: "2em", marginTop: "2em"}}>
+        <div>
+            <div style={{minHeight:"100vh", width: "70%", margin: "auto", marginBottom: "2em", marginTop: "2em"}}>
                 <h1>sample ssr</h1>
                 <p>We got {data.length} records back. You can now loop through them to do something with the data. Like let's create links to other pages that we'll also generate server-side.</p> 
-                
-                
                 {data.map((e, i)=>{return(
                     
-                    <Link href={`/ssr/${e._table.name}/${e.fields.TaskID}`}>
+                    <Link href={`/ssr/${e._table.name}/${e.fields[slugField]}`}>
                     <div
                     style={{
-                      backgroundColor: 'blue',
+                      backgroundColor: 'rgba(20,20,30,.7)',
                       color: 'white',
                       padding: '8px 16px',
-                      borderRadius: '9999px',
+                      borderRadius: '7px',
                     //   display: 'block',
                       margin: '10px auto'
                     }}
@@ -35,8 +35,9 @@ function Page({ data }) {
                   
                     </Link>
                 )})}
-                
-                <p>For now we'll stringify it here:</p>
+                <p>For now we'll also stringify the data at the bottom of this page.</p>
+
+            </div>
             <Stringify data={data} />
         </div>
     )

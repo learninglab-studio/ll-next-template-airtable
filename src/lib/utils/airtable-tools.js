@@ -1,5 +1,5 @@
 const Airtable = require('airtable')
-
+const llog = require('./ll-loggers')
 // module.exports.saveOneRecord = async ({ record, table, base }) => {
 //     const base = Airtable.base('');
 //     return `saved your record`
@@ -8,11 +8,14 @@ const Airtable = require('airtable')
 module.exports.findRecordByValue = async ({ baseId, table, field, value, view }) => {
     var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base(baseId);
     let theRecords = [];
+    llog.cyan(`looking for field ${field} with value ${value}`)
     await base(table).select({
         maxRecords: 1,
         view: view ? view : "Grid view",
         filterByFormula: `${field}='${value}'`
     }).eachPage(function page(records, next){
+
+        llog.yellow(records)
         theRecords.push(...records);
         next()
       })

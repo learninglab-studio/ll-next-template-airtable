@@ -20,10 +20,6 @@ export default function Home() {
       <main className={styles.main}>
           <Heavy>LL Next</Heavy>
           <LLDate />
-        <div className={inter.className}>
-          <Heavy>LL Next</Heavy>
-          <LLDate />
-        </div>
       </main>
       <div className={inter.className}>
         <div style={{fontWeight: "400", width: "80%", margin:"auto"}}>
