@@ -25,9 +25,11 @@ export default function Home() {
         <div style={{fontWeight: "400", width: "80%", margin:"auto"}}>
           <h2>links</h2>
           <ul>
-            <li><Link href="/ssr/sample">ssr-sample</Link></li>
+            <li><Link href="/ssr/sample">server-side rendering example</Link></li>
+            <li><Link href="/ssg/record-list">static generation example</Link></li>
             <li><Link href="https://www.youtube.com/watch?v=M11SvDtPBhA">another link</Link></li>
-            <li><Link href="/">another link</Link></li>
+            <li><Link href="https://www.youtube.com/watch?v=M11SvDtPBhA">another link</Link></li>
+
           </ul>
         </div>
       </div>
