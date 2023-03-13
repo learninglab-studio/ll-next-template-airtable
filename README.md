@@ -15,8 +15,11 @@ We'll do both SSR and SSG samples. For more on SSR and SSG in NextJS, [check out
 
 ## to do
 
-- ssr sample with table and slug
-- ssg sample with table and slug
 - fallback to recordId
-- ssr simple sample only getting props not paths
--  
+- incremental generation
+- md posts
+- mdx pages
+- remote mdx
+- mdx from at?
+- vscode?
+- 
