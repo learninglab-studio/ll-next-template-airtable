@@ -28,8 +28,6 @@ export default function Home() {
             <li><Link href="/ssr/sample">server-side rendering example</Link></li>
             <li><Link href="/ssg/record-list">static generation example</Link></li>
             <li><Link href="https://www.youtube.com/watch?v=M11SvDtPBhA">another link</Link></li>
-            <li><Link href="https://www.youtube.com/watch?v=M11SvDtPBhA">another link</Link></li>
-
           </ul>
         </div>
       </div>

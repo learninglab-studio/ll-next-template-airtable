@@ -1,9 +1,5 @@
 const Airtable = require('airtable')
 const llog = require('./ll-loggers')
-// module.exports.saveOneRecord = async ({ record, table, base }) => {
-//     const base = Airtable.base('');
-//     return `saved your record`
-// }
 
 module.exports.findRecordByValue = async ({ baseId, table, field, value, view }) => {
     var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base(baseId);
