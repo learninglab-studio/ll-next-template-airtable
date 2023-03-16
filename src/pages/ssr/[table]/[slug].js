@@ -3,6 +3,7 @@ import { findRecordByValue } from '@/lib/utils/airtable-tools'
 import { Stringify } from '@/components/utilities'
 import llog from "@/lib/utils/ll-loggers"
 import Markdown from '@/components/utilities/Markdown'
+import Card from '@/components/mk/Card'
 
 const yourTable = "Tasks"
 const yourView = "THE_MENU"
@@ -13,14 +14,17 @@ const Page = ({data}) => {
   console.log(router.query)
   return (
     <div>
-        <p>Printing something of type <code>{router.query.table}</code> with slug <code>{router.query.slug}</code>.</p>
-        <p>here are all the <code>router.query</code> details</p>
-        <pre>{JSON.stringify(router.query, null, 4)}</pre>
-        <h2>{data.fields.TaskTitle}</h2>
+        <h1>{data.fields.Title}</h1>
+        <p>{data.fields.Description}</p>
+        <Card
+          title={data.fields.Title}
+          description={data.fields.Description}
+          image="https://example.com/image.jpg"
+        />
+      <p>wait?</p>
         <Markdown md={data.fields.Description} />
         <Stringify data={data} />
     </div>
-  
   )
 }
 
